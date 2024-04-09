@@ -1,0 +1,62 @@
+\documentclass{article}
+
+\usepackage{PRIMEarxiv}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\graphicspath{{media/}}
+
+% Header
+\pagestyle{fancy}
+\thispagestyle{empty}
+\rhead{ \textit{ }}
+
+% Update your Headers here
+\fancyhead[LO]{Running Title for Header}
+
+%% Title
+\title{Developing and Measuring AI Pluralism: Strategies, Milestones, and Innovative Approaches
+\thanks{\textit{\underline{Citation}}:
+\textbf{Authors. Title. Pages.... DOI:000000/11111.}}
+}
+
+\author{
+  Devin Gonier \\
+  Columbia University \\
+  \texttt{devin.gonier@university.edu} \\
+}
+
+\begin{document}
+\maketitle
+
+\input{sections/abstract.tex}
+
+% keywords can be removed
+\keywords{AI Pluralism \and AGI \and ASI \and Multi-Agent Systems \and Knowledge Graphs}
+
+\input{sections/introduction.tex}
+\input{sections/the_retrieval_architecture.tex}
+\input{sections/the_generative_architecture.tex}
+\input{sections/the_situation.tex}
+\input{sections/experimental_design.tex}
+\input{sections/results.tex}
+\input{sections/discussion.tex}
+\input{sections/milestones.tex}
+\input{sections/conclusion.tex}
+
+\section*{Acknowledgments}
+This work was supported in part by...
+
+% Bibliography
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}
