@@ -1,5 +1,5 @@
 
-TItle: **Devin Gonier (Columbia University), **“Developing and Measuring AI Pluralism: Strategies, Milestones, and Innovative Approaches”
+TItle: **Developing and Measuring AI Pluralism: Strategies, Milestones, and Innovative Approaches**
 
 Abstract:
 
