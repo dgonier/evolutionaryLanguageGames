@@ -1,2 +1,72 @@
 \section{Experimental Design}
-This section outlines the experimental setup for testing the paper's hypotheses, detailing the creation of retrieval structures, generative architectures, and situational models to measure AI Pluralism.
+
+Our experimental design is based around studying how agents interact and cooperate in a language game context. Below is the basic setup for the experiment.
+We then provide our initial hypothesis for what to expect and what the results indicated.
+
+\subsection{Retrieval}
+Each agent in the system has tool based access to query an elasticsearch index to find materials that can help them answer whatever query or cirumstance they are encountering. These are broken down into Private, Semi-Private, and Public indexes.
+
+\subssubsection{Retrieval Accessibility}
+
+\items{
+    \item \textbf{Private Index:} This index is unique to each agent and contains information that is specific to that agent. This could be personal memories, or other information that is not shared with other agents. This private is also "inheritable" by future progeny of the agent.
+    \item \textbf{Semi-Private Index:} This index is shared with a subset of agents. This could be a group of agents that are working on a specific task, or agents that have a shared history. In the context of the situation we are studying agents form "tribes" and each tribe has a shared semi-private index.
+    \item \textbf{Public Index:} This index is shared with all agents in the system. This could be information that is common knowledge, or information that is shared with all agents.
+}
+
+Each index is further broken down into hierarchical categories and node types. The depth of each index is determined by the agent. Each agent is given access to functions which enable them to add documents to an index, or create a new index within an exising index. When querying, results can be a combination of documents and indexes. Thus, agents can choose to structure their index however they like in whatever organizational manner makes sense. There are some structural approaches we also intend on experimenting with where we remove some of the independent control of the agents. This includes basing index structure around node type, or document level. The document level follows the pattern of passage / passage-cluster / document / document-cluster / topic pattern. Since there are only three kinds of nodes in the index, its also worth exploring structuring the index according to node types: knowledge, beliefs, and relationships.
+
+\subssubsection{Node Attributes}
+
+Nodes in the index all have certain attributes, but there are some distinctions between them. In each index, there is a vector lookup which can be used with knn to construct clusters, and cosine similarity (or other similar measures) to find proximity between a query and index for neural semantic search, and finally the lookup vector can be used as a function in the graph neural network that sits on top of the entire network. GNN components are introduced in later versions however.
+
+Another attribute every node type has is a set of edges. Edges define relationships with other nodes. Since every node in an index has an id, each node can track an adjacency matrix of its relationship to other nodes. These adjacency matrices can be further organized according to type of relationship.
+
+Indexes are stored in s3 for tracking purposes at the end of each generation, and those which are not inherited are removed from the ec2 instance hosting the elasticsearch.
+
+\subssubsection{Node Types}
+
+There are three types of nodes in the retrieval network.
+
+\items{
+    \item \textbf{Knowledge:} These nodes contain information that is factual or historical. They can be used to answer questions, or provide context for a situation. They are primarily populated with evidence found from internet search or other apis and always have a source attached to them.
+    \item \textbf{Beliefs:} These nodes contain information that is subjective or personal. They can be used to express opinions as they relate to claims and evidence. The key distinguishing feature here is a \textbf{credence} variable that doesnt simply retrieve information, but also provides a believability score. This is updated through the principles of Bayesian Epistemology. Beliefs may also represent a strategy of position on a particular topic.
+    \item \textbf{Relationships:} These nodes contain information that is relational or social. They can be used to connect agents, or provide context for a situation.
+}
+
+Each group (private, public, semi-private) can contain their own diversity of nodes (knowledge, belief, relationships).
+
+\subsection{Generative Modifications and Evolutionary modifications}
+
+Retrieval is essentially half of the influence on individuality in AI agents, the other half is the architecture of the models themselves. We achieve diversity in three different ways:
+
+\items{
+    \item \textbf{Fine-Tuning:} Each agent has some aspect of it that is fine-tuned on a different source dataset. This could include how to perform a particular action or tool, or it might include domain knowledge. For example, in the language game of debate, one agent might specialize in a particular form of debate called kritik debating. This agent would be fine-tuned on how to construct kritik arguments.
+    \item \textbf{Weight Merging:} Each agent can also be further differentiated by representing a combination of a subset of the total pool of smaller expert agents. This is accomplished by selecting a base agent, and choosing 3 or more other agents to "mix" the weights together in a unique way. This kind of mixing has further variation in terms of the algorithms that are used for the merging, as well the distribution of the weighted sums for where and which layers to merge.
+\item \textbf{Retrieved Initialized Belief Structure}: Each agent is fine-tuned at some subset of layers to incorporate beliefs into the system prompts such that those beliefs directly inform outputs. Arguments are always presented in the first person. The statements reflect the belief structure. As evidence and viewpoints are exchanged, these belief structures may evolve and change. However, the inital state can be diversely set.
+}
+
+These three methods enable a wide variety of potential agents to populate the situation. As each new generation of the game proceeds, further model mixing and initialization get inherited, identifying which techniques were most successful at performing well in the game and eventually converging on a community dynamic that is optimal for the language game task at hand.
+
+\subsection{Setup -- The Evolutionary Language Game}
+
+A language game is any game where players must use language in non-deterministic and open-ended ways to make "moves" that lead to a win condition. Games must resolve in clear winners and losers. Every game has a "GameMaster" agent which ensures the game is played properly by the agents and keeps track objectively from the outside the state of each player in the game. Here are a few language game examples:
+
+\items{
+    \item \textbf{20 Questions:} Agents are limited to 20 yes/no questions to guess a person, place or thing.
+    \item \textbf{Murder Mystery:} Agents are given identities and encouraged to communicate with one another and identify who they think the murderer is.
+    \item \textbf{Debate:} Two teams debate against one another, following academic debate models like Policy, Lincoln Douglas, Parli Debate from American Forensics. The Gamemaster's role is to function as the judge. The judge consists of a panel, which is itself diversified but optimized to not be in the minority decision. Note: that judge adaptation is crucial to be successful in this model!
+    \item \textbf{Systems of Equation:} Different groups are given different equations and must interact and communicate to figure out the hidden variables in a higher order equation.
+
+}
+
+\subsubsection{Tribal Politics}
+In the first round of the game each agent can make a choice to either a) start a new tribe and invite other players into it or b) join a tribe that has already been started. Actions in the game cannot be taken by individuals, but are instead voted on by members of the tribe with capital. Agents can name their tribe, remove players from tribes, and invite new members into their tribe, but they cannot grow their tribe beyond a certain size. This ensures that there is a certan number of tribes to be consistent with the game mechanics of the game. This adds an additional game-theoretic element where the game is both competitive and cooperative. The goal is for the tribe to eventually evolve into a specialized unit such that different players on the team take on certain niche expertise that help the tribe succeed overall.
+
+\subsubsection{Capital Allocation}
+Each agent is initialized with a certain amount of capital which they can spend according to which actions they think are best. When proposing an action for a round, they can allocate capital based on their confidence level in that action. For example, in debate this might be a proposed argument. In 20 questions it might be a question and a justification for why that question ought to be asked. After all players have submited their questions, the tribe has a second round of spending capital where they select which action of the other players they want to spend capital on. The action with the most capital wins and the action is taken by the tribe. Agents submit reasons for why they think their action ought to be taken, essentially persuading the group of why their move is best. The agent who proposed the action, may get some capital back depending on the game mechanics of the game. If a player loses all their capital before the end of the game, they are eliminated from the game.
+
+\subsubsection{Evolution and Generational Inheritance}
+After a generation (a set of rounds of game play) the top scoring players get to "mate." Mating in this context means merging model weights with other winners. The amount a player gets to mate is directly proportional to their score. So the top player gets to mate the most, and the bottom player doesnt get to mate at all. The next generation then is made up of the progeny of the previous generation.
+
+Furthermore, after mating, children inherit the retrieval indexes of their parent as a starting point, and the parent has an opportunity to update their beliefs one more time with a set of strategies for their children to utilize when they play the game in the next round.
