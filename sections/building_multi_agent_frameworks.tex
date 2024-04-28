@@ -1,0 +1,66 @@
+\section{Building Multi Agent Frameworks}
+
+\subsection{Introduction to State and Component Management in JavaScript Frameworks}
+
+JavaScript frameworks like Vue.js and React have revolutionized web development through their effective use of global and component-specific states. Global state refers to data that is shared across the entire application, accessible from any component within the system. This is invaluable for user-specific data that needs to be consistent and available throughout the application, such as user authentication status, theme settings, or multi-view data caching.
+
+In contrast, component state is localized and pertains only to a specific component or module within the application. This encapsulation allows each component to manage its own state independently of others, leading to better modularity and reusability. Components handle their state based on their specific needs and responsibilities, which enhances the robustness and maintainability of the application by isolating state management to relevant parts of the interface.
+
+A component in JavaScript frameworks is essentially a self-contained unit that encapsulates a portion of the user interface and the logic that drives it. Components are the building blocks of modern web applications, each responsible for rendering a part of the application's UI and handling user interactions. The value of using components lies in their ability to be reused across different parts of an application without repeating code. This modularity not only speeds up development time but also improves the consistency and quality of the application. Components can be as small as a button or as large as an entire application section, each with its own lifecycle, state, and methods.
+
+The dynamic nature of JavaScript frameworks allows components to be rendered and re-rendered in response to user actions or changes in data. This reactivity is a core feature of frameworks like React and Vue.js, where the DOM (Document Object Model) is updated efficiently to reflect changes in component state or global state without reloading the entire page. For example, when a user interacts with a form, only the components related to that form might update, rather than the entire page. This selective re-rendering optimizes performance and enhances user experience by providing immediate feedback in response to user interactions.
+
+JavaScript frameworks leverage a virtual DOM to manage these updates, which calculates the minimal set of changes needed to update the actual DOM based on state changes in components. This process is highly efficient and reduces the amount of work needed to keep the UI in sync with the underlying application state. By only updating components that need to reflect changes, the frameworks ensure that the web applications remain fast and responsive, even as they scale in complexity and size.
+
+
+\subsection{Introduction to Multi-Agent Frameworks}
+
+In multi-agent frameworks, the concept of state is intricately layered to accommodate the complexities of interactions among multiple agents. The state is divided into three main layers: private, group, and public. The \textit{private state} of an agent includes its unique history, personal data, and internal strategies that are inaccessible to other agents. This encapsulation ensures that each agent maintains a level of individuality and privacy necessary for independent decision-making.
+
+The \textit{group state}, shared among a defined subset of agents such as a team or tribe, encompasses strategies, shared goals, or collective memories that support coordination and cooperative behaviors among the agents. This layer is crucial for tasks that require collaboration, allowing agents to operate with a shared understanding and common objectives.
+
+Lastly, the \textit{public state} involves the overarching game or environment rules that all agents interact with. It includes the definition of the environment and any universal constraints or goals that affect all participants. This layer is analogous to the global state in JavaScript frameworks, where it provides a common ground for all components—here, the agents—to interact within.
+
+Components in multi-agent frameworks are analogous to tasks that agents need to perform. Each component encapsulates a specific task, equipped with the necessary tools and prompts required for execution. Components can be dynamically rendered according to the agents’ needs, similar to how web components are rendered in response to user interactions. However, instead of a Document Object Model (DOM), these components are organized in a Directed Acyclic Graph (DAG), which allows for complex interdependencies and efficient task management among agents.
+
+Moreover, components can have model overrides allowing them to adapt or specialize based on the task's requirements or the agent's capabilities. This flexibility enables the system to tailor task execution strategies to the specific needs of the scenario or the strengths of the agent, enhancing effectiveness and efficiency.
+
+Agents in a multi-agent system may be defined by specific models, private memories, and distinct strategies or beliefs. What makes each agent unique is not just its private data but also its ability to apply its capabilities in ways that significantly contribute to the collective objectives. The uniqueness of each agent is vital as it allows for a more diverse range of strategies and solutions to the tasks at hand, mirroring the diversity found in human team settings.
+
+Each agent's contribution is optimized through the effective use of state layering and component-based task management, ensuring that the collective behavior of the system is more than the sum of its parts. By leveraging the unique attributes and capabilities of each agent, multi-agent systems can achieve higher levels of complexity and adaptability, essential for navigating dynamic and unpredictable environments.
+
+
+
+%
+%* compare the idea of agentic frameworks to javascript frameworks like react, vue
+%* Introduce the idea of Agent State and its motivation
+%    * Agent State allows for more expicity control over attention
+%    * model agnostic agent persistence -- meaning an agent can theoretically use multiple models
+%    * The role of retrieval in individuating agents
+%* Retrieval In Terms of ElasticSearch Contexts:
+%    * Public
+%    * Semi-Private
+%    * Private
+%* Types of Retrieval Nodes:
+%    * Belief Nodes
+%    * Memory Nodes
+%    * Knowledge Nodes
+%        * Documents
+%        * Sections
+%        * Passages
+%    * Relationship Nodes
+%* Retrieval Nodes and Adjacency Matrices:
+%    * Leaning on Graph Machine Learning to enhance Retrieval on knowledge graphs
+%    * Tracking relationships through adjacency matrices and association learning
+%* Agent Components
+%    * Thinking about subtasks as components with pointers to to other components
+%    * Components load agents and run LLM or functional components
+%    * Designed to work with tools, plug and play
+%* Language Games
+%    * Why Games Matter -- Understanding the Reward
+%    * Game Theory and Agent States
+%    * Evolutionary Inheritance
+%* Model Merging and Evolutionary Algorithms
+%    * What is model merging, Why is it worthwhile
+%    * How do we use evolutionary algorithms to merge models
+%    * The role of Language Games
