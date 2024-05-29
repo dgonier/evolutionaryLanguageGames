@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.10)  28 APR 2024 14:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.10)  29 APR 2024 13:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -571,11 +571,22 @@ LaTeX Warning: Citation `Sorensen_2024' on page 4 undefined on input line 59.
 
 ) (sections/building_multi_agent_frameworks.tex [4])
 (sections/the_retrieval_architecture.tex [5]
-sections/the_retrieval_architecture.tex:4: Misplaced alignment tab character &.
-<argument> LLMs &
-                  Epistemic Primitives
-l.4 \subsection{LLMs & Epistemic Primitives}
-                                            
+sections/the_retrieval_architecture.tex:10: Undefined control sequence.
+l.10 Knowledge nodes are always loaded into \texit
+                                                  {public states}. Every kno...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[6]) (sections/the_generative_architecture.tex [7]
+sections/the_generative_architecture.tex:10: Misplaced alignment tab character 
+&.
+<argument> Evolutionary Model Merging &
+                                        Mixing
+l.10 ...ction{Evolutionary Model Merging & Mixing}
+                                                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -585,10 +596,18 @@ might try typing `S' now just to see what is salvageable.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `alignment tab' on input line 4.
+(hyperref)                removing `alignment tab' on input line 10.
 
-) (sections/the_generative_architecture.tex) (sections/the_situation.tex)
-(sections/experimental_design.tex
+sections/the_generative_architecture.tex:12: Undefined control sequence.
+l.12 ...the fly. Secondly, developers began \texit
+                                                  {mixing} models using the ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+) (sections/the_situation.tex [8]) (sections/experimental_design.tex
 sections/experimental_design.tex:9: Undefined control sequence.
 l.9 \subssubsection
                    {Retrieval Accessibility}
@@ -598,10 +617,6 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-Underfull \vbox (badness 1509) has occurred while \output is active []
-
- [6]
 sections/experimental_design.tex:11: Undefined control sequence.
 l.11 \items
            {
@@ -662,6 +677,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+[9]
 sections/experimental_design.tex:27: Undefined control sequence.
 l.27 \subssubsection
                     {Node Types}
@@ -745,7 +761,6 @@ l.44     \item \textbf
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[7]
 
 sections/experimental_design.tex:45: LaTeX Error: Lonely \item--perhaps a missi
 ng list environment.
@@ -825,6 +840,7 @@ l.58     \item \textbf
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+[10]
 
 sections/experimental_design.tex:59: LaTeX Error: Lonely \item--perhaps a missi
 ng list environment.
@@ -853,10 +869,13 @@ l.60 \item \textbf
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[8]) (sections/results.tex) (sections/discussion.tex) (sections/milestones.tex)
-(sections/conclusion.tex)
+) (sections/results.tex) (sections/discussion.tex) (sections/milestones.tex)
+(sections/conclusion.tex
+Underfull \vbox (badness 1014) has occurred while \output is active []
+
+ [11])
 No file main.bbl.
-[9] (C:/research\evolutionaryLanguageGames\out\main.aux)
+[12] (C:/research\evolutionaryLanguageGames\out\main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
@@ -865,91 +884,29 @@ L3 programming layer <2024-03-14>
 
 LaTeX Warning: There were undefined references.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: B1F702E3649EC2AEC7337169B58B4630;9102
-(rerunfilecheck)             After:  90CEEA78ADAE8C8EF86271A55532562D;5110.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 1662900FA410E719F0843426DEF36B41;7497.
  ) 
 Here is how much of TeX's memory you used:
- 12027 strings out of 474424
- 193231 string characters out of 5741739
+ 12058 strings out of 474424
+ 193879 string characters out of 5741739
  1940496 words of memory out of 5000000
- 33869 multiletter control sequences out of 15000+600000
- 614666 words of font info for 246 fonts, out of 8000000 for 9000
+ 33885 multiletter control sequences out of 15000+600000
+ 615518 words of font info for 257 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,1065b,534s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{subsubsection.3.2.3} has been referenced but does n
-ot exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsubsection.3.2.2} has been referenced but does n
-ot exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsubsection.3.2.1} has been referenced but does n
-ot exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsubsection.3.1.3} has been referenced but does n
-ot exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsubsection.3.1.2} has been referenced but does n
-ot exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsubsection.3.1.1} has been referenced but does n
-ot exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsubsection.2.6.2} has been referenced but does n
-ot exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsubsection.2.6.1} has been referenced but does n
-ot exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsubsection.2.5.2} has been referenced but does n
-ot exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsubsection.2.5.1} has been referenced but does n
-ot exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsubsection.2.3.2} has been referenced but does n
-ot exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsubsection.2.3.1} has been referenced but does n
-ot exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsubsection.2.2.2} has been referenced but does n
-ot exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsubsection.2.2.1} has been referenced but does n
-ot exist, replaced by a fixed one
-
- <C:\Users\Dgoni\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt10
-00.pk><C:/Users/Dgoni/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb><C:/Users/Dgoni/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmsy6.pfb><C:/Users/Dgoni/AppData/Local/Programs/MiKTeX/fonts/type
-1/urw/times/utmb8a.pfb><C:/Users/Dgoni/AppData/Local/Programs/MiKTeX/fonts/type
-1/urw/times/utmbi8a.pfb><C:/Users/Dgoni/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/urw/times/utmr8a.pfb><C:/Users/Dgoni/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/urw/times/utmri8a.pfb>
-Output written on C:/research\evolutionaryLanguageGames\out\main.pdf (9 pages, 
-138557 bytes).
+ 75i,12n,79p,1478b,534s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Dgoni\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
+1000.pk><C:/Users/Dgoni/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb><C:/Users/Dgoni/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmsy6.pfb><C:/Users/Dgoni/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/urw/times/utmb8a.pfb><C:/Users/Dgoni/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/urw/times/utmbi8a.pfb><C:/Users/Dgoni/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/urw/times/utmr8a.pfb><C:/Users/Dgoni/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/urw/times/utmri8a.pfb>
+Output written on C:/research\evolutionaryLanguageGames\out\main.pdf (12 pages,
+ 149330 bytes).
 PDF statistics:
- 267 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
- 53569 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 263 PDF objects out of 1000 (max. 8388607)
+ 50 named destinations out of 1000 (max. 500000)
+ 53537 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -1,0 +1,55 @@
+\begin{thebibliography}{1}
+
+\bibitem{masterman2024landscape}
+Tula Masterman, Sandi Besen, Mason Sawtell, and Alex Chao.
+\newblock The landscape of emerging ai agent architectures for reasoning,
+  planning, and tool calling: A survey.
+\newblock {\em arxiv}, 2024.
+
+\bibitem{li2024agents}
+Junyou Li, Qin Zhang, Yangbin Yu, Qiang Fu, and Deheng Ye.
+\newblock More agents is all you need, 2024.
+
+\bibitem{hu2024large}
+Shengxiang Hu, Guobing Zou, Song Yang, Yanglan Gan, Bofeng Zhang, and Yixin
+  Chen.
+\newblock Large language model meets graph neural network in knowledge
+  distillation, 2024.
+
+\bibitem{wang2024unleashing}
+Zhenhailong Wang, Shaoguang Mao, Wenshan Wu, Tao Ge, Furu Wei, and Heng Ji.
+\newblock Unleashing the emergent cognitive synergy in large language models: A
+  task-solving agent through multi-persona self-collaboration, 2024.
+
+\bibitem{du2023improving}
+Yilun Du, Shuang Li, Antonio Torralba, Joshua~B. Tenenbaum, and Igor Mordatch.
+\newblock Improving factuality and reasoning in language models through
+  multiagent debate, 2023.
+
+\bibitem{Wu_2021}
+Zonghan Wu, Shirui Pan, Fengwen Chen, Guodong Long, Chengqi Zhang, and
+  Philip~S. Yu.
+\newblock A comprehensive survey on graph neural networks.
+\newblock {\em IEEE Transactions on Neural Networks and Learning Systems},
+  32(1):4–24, January 2021.
+
+\bibitem{akiba2024evolutionary}
+Takuya Akiba, Makoto Shing, Yujin Tang, Qi~Sun, and David Ha.
+\newblock Evolutionary optimization of model merging recipes, 2024.
+
+\bibitem{ChristophCommunityInloop2021}
+Johann Häußermann and Christoph Lütge.
+\newblock Community-in-the-loop: towards pluralistic value creation in ai,
+  or—why ai needs business ethics.
+\newblock {\em AI and Ethics}, 2, 03 2021.
+
+\bibitem{Sorensen_2024}
+Taylor Sorensen, Liwei Jiang, Jena~D. Hwang, Sydney Levine, Valentina Pyatkin,
+  Peter West, Nouha Dziri, Ximing Lu, Kavel Rao, Chandra Bhagavatula, Maarten
+  Sap, John Tasioulas, and Yejin Choi.
+\newblock Value kaleidoscope: Engaging ai with pluralistic human values,
+  rights, and duties.
+\newblock {\em Proceedings of the AAAI Conference on Artificial Intelligence},
+  38(18):19937–19947, March 2024.
+
+\end{thebibliography}

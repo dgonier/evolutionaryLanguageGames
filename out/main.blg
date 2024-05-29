@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: out/main.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: unsrt.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Database file #1: references.bib
+Warning--I didn't find a database entry for "wu2021"
+Warning--empty journal in masterman2024landscape
+You've used 8 entries,
+            1791 wiz_defined-function locations,
+            482 strings with 5251 characters,
+and the built_in function-call counts, 1672 in all, are:
+= -- 95
+> -- 154
+< -- 0
++ -- 54
+- -- 46
+* -- 123
+:= -- 295
+add.period$ -- 19
+call.type$ -- 8
+change.case$ -- 8
+chr.to.int$ -- 0
+cite$ -- 9
+duplicate$ -- 50
+empty$ -- 149
+format.name$ -- 46
+if$ -- 347
+int.to.chr$ -- 0
+int.to.str$ -- 8
+missing$ -- 3
+newline$ -- 38
+num.names$ -- 8
+pop$ -- 42
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 31
+stack$ -- 0
+substring$ -- 39
+swap$ -- 7
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 9
+width$ -- 9
+write$ -- 73
+(There were 2 warnings)

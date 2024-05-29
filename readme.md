@@ -1,3 +1,9 @@
+Projects to watch:
+crew.ai
+https://autogen-studio.com/
+https://github.com/joaomdmoura/CrewAI
+https://app.studyrecon.ai/search.html?id=project-3qag3q15zhmg1u4c&preview=true
+https://groundedai.company/studyrecon/
 
 TItle: **Developing and Measuring AI Pluralism: Strategies, Milestones, and Innovative Approaches**
 
