@@ -7,6 +7,19 @@ https://groundedai.company/studyrecon/
 
 TItle: **Developing and Measuring AI Pluralism: Strategies, Milestones, and Innovative Approaches**
 
+3 areas:
+1. philosophy: 
+* what is pluralism? how can we measure it?
+* how does pluralism, perspectives and dialectics fit into consciousness- heavy influence from dennett
+2. science
+* how can sota be advanced using pluralistic architectures
+* rethinking traditional training paradigms and splitting them up into dialectical processes with smaller training applications 
+* how can these algorithms be properly contextualized and integrated into ml architecture 
+3. applications and implementations
+* what can we use multi agent systems for
+* what shouldn't we use them for
+* what kind of collaborative frameworks should exist for human in the loop interactions 
+
 Abstract:
 
 This paper presents a comprehensive overview of the development strategies and milestones necessary for realizing AI Pluralism. It begins by reevaluating the transition from GPT to ChatGPT, examining how leveraging trained models to process information channels differently can contribute to the creation of individualized AI agents. Specifically, it explores how different epistemological representations like _belief, knowledge, interpersonal relationships_ can be accounted for in LLMs. The paper explores various approaches to training sets, including the combination of Reinforcement Learning from Human Feedback (RLHF) and fine-tuning, model merging, variations on Mixture of Experts (MoE) architectures including specialized routing between experts in the context of AI Pluralism. Through such techniques we propose methods for enabling diverse agent interactions both in terms of AI-Human and AI-AI interactions. Drawing on the traditions of Turing, we suggest language games as a framework for measuring progress. Ranging from simplistic games like 20 questions to sophisticated games like academic debate we study community “tribalistic” environments around cooperative/competitive multi-agent game dynamics. Using evolutionary approaches, such systems are capable of generating new models via model merging, new stored strategies and concepts via private agentic knowledge retrieval graphs, and interpersonal relationship dynamics. Additionally, the paper proposes a set of milestones for measuring progress in AI Pluralism more broadly, introducing new pluralistic parameters and indicators. These milestones include measuring systems' ability to evolve over time while maintaining consistent positionality using a "turn-based" model, developing a graph-based model for understanding relationship clusters, ideologies, and complex interactions within the AI community, and measuring creativity by way of predictability. By outlining these development strategies and milestones, this paper provides a roadmap for the practical implementation and assessment of AI Pluralism, contributing to the advancement of more diverse, adaptable, and innovative AI systems.
