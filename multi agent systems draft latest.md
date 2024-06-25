@@ -253,27 +253,27 @@ The interplay between building blocks, internal models, and diversity in our mul
 As we continue to refine our implementation of these concepts, we move closer to creating artificial systems that not only process information but do so with a depth and richness that approximates conscious cognition. While the full realization of machine consciousness remains an open question, these principles provide a robust framework for our ongoing exploration of this profound and fascinating domain.
 
 In the next section, we dive into some experimental questions that take the theory and make it more concrete. The main focus is on how we can most effectively pluralize agents to leverage the attributes mentioned. While many are familiar with techniques like temperature for widening the range of outputs, we hope to propose various alternatives that might manifest differences more robustly. These include:
-·       Sophisticated state-based relationships between agents and overall objectives
-·       Retrieval differences in how agents acquire information that enables them to approach problem with distinct sets of evidence
-·       Belief and experience management that enables agents to be dynamic and influence their internal models.
-·       Defining a variety of interaction schemas that facilitate novel communication mechanisms encouraging creative problem solving and leveraging the advantages of diverse agentic systems.
-·       Delegation mechanisms for defining the interaction problem solving graph. How are the limited resources of the computational graph optimally configured and managed to ensure the right number and right type of agents are being properly deployed in a given moment?
+* Sophisticated state-based relationships between agents and overall objectives
+* Retrieval differences in how agents acquire information that enables them to approach problem with distinct sets of evidence
+* Belief and experience management that enables agents to be dynamic and influence their internal models.
+* Defining a variety of interaction schemas that facilitate novel communication mechanisms encouraging creative problem solving and leveraging the advantages of diverse agentic systems.
+* Delegation mechanisms for defining the interaction problem solving graph. How are the limited resources of the computational graph optimally configured and managed to ensure the right number and right type of agents are being properly deployed in a given moment?
 # Section 2: Experiments in Pluralizing Factors
 ## 2.1 Experiments related to Multi-Agent Dynamics in information Retrieval
 Query Differentiation Effects on Researching Topics
 We identify three categories of agent retrieval from the agent’s perspective:
--Larger Parameter Models e.g. GPT4o, LLama 70B etc. 
--Belief Biased Retrieval With Smaller Context Windows
--Interactive Retrieval
+* Larger Parameter Models e.g. GPT4o, LLama 70B etc. 
+* Belief Biased Retrieval With Smaller Context Windows
+* Interactive Retrieval
 In each case the same retrieval system consisting of a vector database setup with passages from a document base is used. The retrieval system is eThe default presumption is that larger models with larger context windows ought to out-perform smaller models with smaller context windows generally speaking. We hypothesize that implementing alternative agent infrastructures that orchestrate retrieval according to belief biases and interactive schemas will achieve the same or better results with far less compute than larger models require. 
 Certain tasks are likely to exhibit minor differences between setups, or clearly favor one model over another. To test this we break down our retrieval evaluation into three types of problems
 Policy Advocacy where optimal answers:
-Evaluate different stakeholder positions and attempt to maximize benefits
+* Evaluate different stakeholder positions and attempt to maximize benefits
 Offer accurate evidence with correctly cited sources
-Contain only accurate information grounded in facts and logical reasoning
+* Contain only accurate information grounded in facts and logical reasoning
 Basic Information lookup
-Information is concise
-Information is accurate
+* Information is concise
+* Information is accurate
 Ethical Analysis
 Well reasoned consideration of various ethical perspectives grounded in sourced perspectives
 Balanced synthesis of various positions and analysis of irreconcilable differences
