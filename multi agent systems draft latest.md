@@ -258,13 +258,13 @@ In the next section, we dive into some experimental questions that take the theo
 ·       Belief and experience management that enables agents to be dynamic and influence their internal models.
 ·       Defining a variety of interaction schemas that facilitate novel communication mechanisms encouraging creative problem solving and leveraging the advantages of diverse agentic systems.
 ·       Delegation mechanisms for defining the interaction problem solving graph. How are the limited resources of the computational graph optimally configured and managed to ensure the right number and right type of agents are being properly deployed in a given moment?
-Section 2: Experiments in Pluralizing Factors
-2.1 Experiments related to Multi-Agent Dynamics in information Retrieval
+# Section 2: Experiments in Pluralizing Factors
+## 2.1 Experiments related to Multi-Agent Dynamics in information Retrieval
 Query Differentiation Effects on Researching Topics
 We identify three categories of agent retrieval from the agent’s perspective:
-Larger Parameter Models e.g. GPT4o, LLama 70B etc. 
-Belief Biased Retrieval With Smaller Context Windows
-Interactive Retrieval
+-Larger Parameter Models e.g. GPT4o, LLama 70B etc. 
+-Belief Biased Retrieval With Smaller Context Windows
+-Interactive Retrieval
 In each case the same retrieval system consisting of a vector database setup with passages from a document base is used. The retrieval system is eThe default presumption is that larger models with larger context windows ought to out-perform smaller models with smaller context windows generally speaking. We hypothesize that implementing alternative agent infrastructures that orchestrate retrieval according to belief biases and interactive schemas will achieve the same or better results with far less compute than larger models require. 
 Certain tasks are likely to exhibit minor differences between setups, or clearly favor one model over another. To test this we break down our retrieval evaluation into three types of problems
 Policy Advocacy where optimal answers:
@@ -409,23 +409,23 @@ Sure, here are some example questions/objectives for each category along with a 
 
 This rubric can guide the evaluation model (Claude-Sonnet 3.5) to score the responses systematically and fairly based on the outlined criteria.
 
-Other applications
-Further Research
-Multi-Dimensional Embedding References
-Value Based Lookups
+-Other applications
+-Further Research
+-Multi-Dimensional Embedding References
+-Value Based Lookups
 Belief based Lookups
-2.2 Experiments related to Multi-Agent Dynamics in State Management
+## 2.2 Experiments related to Multi-Agent Dynamics in State Management
 Implementing the three state layers
 Bayesian Epistemology and Belief Representation. Can agents persuade other agents to change their beliefs? How does this effect quality of output?
 Deep State and Model Fine-Tuning – PEFT and REFT
-2.2 Experiments related to Multi-Agent Dynamics in Interaction Schemas
+## 2.3 Experiments related to Multi-Agent Dynamics in Interaction Schemas
 
 Reversing the Positivity Bias: Can agents optimized to prefer disagreement generate better results in a decision calculus?
 Debate and Dialectical Reasoning
 Consensus Models
 Recursive Delegation: How do parent agents delegate to child agents? Attention splitting – Start with 2 agents, if both agree your done, if not split into 4 and so on based on some acceptable threshold of consensus.
 
-Section 3: Open Source Frameworks for studying multi-agent language systems and evaluating collaborative human in the loop preferences
+# Section 3: Open Source Frameworks for studying multi-agent language systems and evaluating collaborative human in the loop preferences
 1.        The need for an open source framework
 2.        The ethical value of building AI communities
 3.        Tracking human preferences in when collaborating with multi-agent language systems.
