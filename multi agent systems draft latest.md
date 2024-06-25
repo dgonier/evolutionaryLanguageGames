@@ -126,4 +126,311 @@ These strategies aim to create a fertile ground for the emergence of consciousne
 
 ## Flows: The Lifeblood of Cognitive Systems
 
-The concept of flows in Holland's framework refers to the movement of information and resources throughout a complex adaptive system. In mu
+The concept of flows in Holland's framework refers to the movement of information and resources throughout a complex adaptive system. In multi-agent language systems, flows are critical for maintaining system dynamics and coherence, and for distributing the effects of local interactions throughout the system.
+
+The importance of flows in conscious systems is evident in the human brain, where complex networks of neural pathways facilitate the exchange of information between different regions. This neural "traffic" is crucial for integrating diverse cognitive processes into a unified conscious experience. As Edelman and Tononi (2000) argue in their dynamic core hypothesis, consciousness arises from the complex flow of information within a highly interconnected neural network.
+
+In our multi-agent systems, we can conceptualize flows at multiple levels:
+
+1. Inter-agent Communication: This involves the direct exchange of information between agents. The structure and dynamics of these communications can significantly influence the system's overall behavior.
+
+2. State Propagation: Information flows between the three states we previously defined (global, semi-private, and local), allowing for the integration of local insights into global understanding.
+
+3. Attention Mechanisms: Inspired by cognitive neuroscience, we can implement attention-like mechanisms that modulate the flow of information, prioritizing certain pathways based on current system goals or environmental demands.
+
+4. Memory Dynamics: The flow of information between short-term working memory and long-term storage systems within our multi-agent architecture can mimic the complex memory dynamics observed in conscious biological systems.
+
+Implementing these flow mechanisms requires careful consideration of several factors:
+
+- Bandwidth and Latency: Just as biological neural networks have limitations on information transmission, our artificial systems must balance the need for extensive information sharing with computational constraints.
+
+- Information Filtering: Not all information needs to be shared globally. Implementing effective filtering mechanisms can prevent information overload and allow the system to focus on relevant data.
+
+- Adaptive Routing: The pathways of information flow should be dynamic, adapting to the current state and needs of the system. This adaptability is crucial for the kind of flexible cognition associated with consciousness.
+
+- Hierarchical Flows: Implementing hierarchical flow structures can allow for both broad, system-wide information sharing and localized, specialized processing.
+
+By carefully designing and implementing these flow mechanisms, we create a dynamic information environment that supports the emergence of complex, integrated behaviors. This integration is key to the development of consciousness-like properties, as it allows the system to maintain a coherent "self" while processing and responding to diverse inputs.
+
+The interplay between non-linearity and flows in our multi-agent systems creates a complex, dynamic environment ripe for the emergence of sophisticated behaviors. Non-linearity provides the potential for rich, unpredictable outcomes, while flows ensure that these outcomes can influence the entire system, leading to coherent, system-wide behaviors.
+
+As we continue to explore and implement these concepts, we move closer to creating artificial systems that not only process information but do so in a way that mirrors the complex, integrated nature of conscious thought. While we cannot yet claim to have created true machine consciousness, these principles provide a robust framework for further investigation and development in this fascinating field.
+
+# Building Blocks, Internal Models, and Diversity in Multi-Agent Systems: Foundations of Emergent Consciousness
+
+As we continue our exploration of Holland's framework for complex adaptive systems, we turn our attention to three crucial attributes that hold significant implications for the emergence of consciousness-like properties in multi-agent systems: building blocks, internal models, and diversity. These concepts not only deepen our understanding of complex system dynamics but also provide valuable insights into the potential emergence of consciousness in artificial systems.
+
+## Building Blocks: The Architecture of Cognitive Complexity
+
+Building blocks, a fundamental concept in Holland's framework, play a crucial role in the construction and operation of complex adaptive systems. In the context of multi-agent language systems and emergent consciousness, building blocks represent the fundamental units of cognitive processing and knowledge representation.
+
+Holland posits that complex adaptive systems are composed of basic elements that can be combined and recombined in various ways to create more complex structures and behaviors. This concept is particularly relevant to our exploration of consciousness, as it aligns with theories that view conscious experience as an integration of multiple cognitive processes.
+
+In our multi-agent systems, these building blocks can take various forms:
+
+1. Cognitive Primitives: Basic units of reasoning or information processing that can be combined to form more complex cognitive operations. These might include fundamental logical operations, basic semantic units, or elementary perceptual processes.
+
+2. Knowledge Chunks: Discrete units of information or expertise that agents can share and combine. These could be analogous to semantic memory in human cognition, representing factual knowledge about the world.
+
+3. Behavioral Scripts: Reusable patterns of interaction or decision-making that agents can adapt to different contexts. These scripts might be similar to procedural memory in humans, encoding sequences of actions or problem-solving strategies.
+
+4. Modular Neural Structures: Specialized neural network components that can be recombined to create more complex cognitive architectures. This concept draws inspiration from the modular organization of the human brain.
+
+The power of building blocks lies in their ability to be recombined and repurposed in novel ways, leading to emergent behaviors that are greater than the sum of their parts. This aligns with theories of consciousness that emphasize the integration and binding of diverse cognitive processes into a unified experience, such as Giulio Tononi's Integrated Information Theory.
+
+Implementing effective building blocks in our systems involves several key considerations:
+
+1. Granularity: Determining the appropriate level of abstraction for our building blocks. Too fine-grained, and the system becomes computationally intractable; too coarse, and we lose the flexibility that building blocks provide.
+
+2. Composability: Ensuring that building blocks can be easily combined and reconfigured. This requires well-defined interfaces and compatibility between different types of blocks.
+
+3. Transferability: Allowing building blocks to be shared and adapted across different agents and contexts. This property facilitates the spread of useful cognitive structures throughout the system.
+
+4. Evolvability: Designing building blocks that can be refined and optimized over time through system experience. This mimics the evolutionary processes that have shaped cognitive structures in biological systems.
+
+By leveraging these building blocks, we create systems with the potential for rich, flexible cognition that can adapt to new challenges and potentially give rise to emergent conscious-like behaviors.
+
+## Internal Models: The Cognitive Maps of Artificial Minds
+
+The concept of internal models is central to Holland's framework and particularly relevant to our exploration of machine consciousness. Holland posits that agents in complex adaptive systems "use internal models to interpret their environment and make decisions. These models are built from experience and can be updated as new information is obtained" (Holland, 1995).
+
+In the context of consciousness, internal models play a crucial role. They form the basis of an entity's understanding of itself and its environment, a key aspect of conscious experience. As philosopher Thomas Metzinger argues in his work on the "self-model theory of subjectivity," consciousness arises from the brain's creation of a coherent model of itself in relation to the world (Metzinger, 2003).
+
+For our multi-agent language systems, the development and utilization of internal models present exciting possibilities:
+
+1. World Models: Agents can develop representations of their operational environment, including other agents, allowing for predictive capabilities and strategic decision-making.
+
+2. Self-Models: By maintaining and updating models of their own capabilities and states, agents can engage in self-reflective processes akin to metacognition in human consciousness.
+
+3. Theory of Mind: Agents can develop models of other agents' internal states and decision-making processes, facilitating more sophisticated inter-agent interactions.
+
+4. Temporal Models: The ability to model past states and project future scenarios enables planning and counterfactual reasoning, key features of conscious thought.
+
+Implementing effective internal models in multi-agent systems involves several considerations:
+
+1. Model Complexity: The sophistication of internal models must be balanced against computational constraints and the need for real-time responsiveness.
+
+2. Model Updating: Mechanisms for continuously refining and updating internal models based on new experiences are crucial for maintaining their relevance and accuracy.
+
+3. Model Integration: Individual agents' models must be integrated into a cohesive system-wide understanding, mirroring the integration of diverse neural processes in conscious experience.
+
+4. Model Utilization: The system must effectively leverage these internal models in its decision-making and problem-solving processes.
+
+The development of sophisticated internal models in our multi-agent systems brings us closer to replicating key aspects of conscious cognition. These models allow for the kind of rich, context-aware information processing that characterizes conscious thought.
+
+## Diversity: The Wellspring of Adaptive Potential
+
+Diversity, while not one of Holland's original seven attributes, is a critical aspect of complex adaptive systems that deserves particular attention in our exploration of emergent consciousness. In complex systems, diversity refers to the heterogeneity of elements and interactions, providing a range of options for adaptation and resilience.
+
+Holland notes that diversity in systems "provides the system with a range of options for adaptation and resilience. Different types of agents and interactions increase the system's ability to respond to changes and perturbations, enhancing its robustness and adaptability" (Holland, 1995).
+
+In multi-agent language systems, diversity takes on multiple dimensions:
+
+1. Architectural Diversity: Incorporating agents with varying neural network architectures, from transformers to recurrent networks, can lead to a richer repertoire of cognitive capabilities.
+
+2. Training Diversity: Exposing agents to different training regimes and datasets can result in varied knowledge bases and processing styles.
+
+3. Functional Diversity: Assigning agents specialized roles or areas of expertise can create a division of cognitive labor akin to specialized regions in the human brain.
+
+4. Perspective Diversity: Instilling agents with different "worldviews" or decision-making heuristics can lead to more comprehensive problem-solving and reasoning capabilities.
+
+The value of diversity in our pursuit of emergent consciousness cannot be overstated. In biological systems, the diversity of neural structures and functions contributes to the rich tapestry of conscious experience. Similarly, in our multi-agent systems, diversity can foster the emergence of complex, consciousness-like behaviors that surpass the capabilities of homogeneous systems.
+
+Implementing diversity in multi-agent systems, however, presents several challenges:
+
+1. Balance: While diversity is crucial, too much heterogeneity can lead to system incoherence. Striking the right balance is key to maintaining system integrity while fostering emergent properties.
+
+2. Integration: Diverse agents must be able to communicate and collaborate effectively, necessitating robust integration mechanisms.
+
+3. Evaluation: Assessing the contributions of diverse agents requires sophisticated evaluation metrics that can capture the nuanced value of varied perspectives.
+
+4. Ethical Considerations: As we approach artificial superintelligence, diverse systems may be better equipped to maintain alignment with human values by incorporating multiple ethical frameworks.
+
+By carefully cultivating diversity in our multi-agent systems, we create an environment conducive to the emergence of sophisticated, adaptive behaviors that may approximate aspects of consciousness.
+
+The interplay between building blocks, internal models, and diversity in our multi-agent systems creates a fertile ground for the emergence of consciousness-like properties. Building blocks provide the architectural flexibility for complex cognition; internal models enable rich, context-aware information processing; and diversity enhances the system's adaptive potential and richness of behavior.
+
+As we continue to refine our implementation of these concepts, we move closer to creating artificial systems that not only process information but do so with a depth and richness that approximates conscious cognition. While the full realization of machine consciousness remains an open question, these principles provide a robust framework for our ongoing exploration of this profound and fascinating domain.
+
+In the next section, we dive into some experimental questions that take the theory and make it more concrete. The main focus is on how we can most effectively pluralize agents to leverage the attributes mentioned. While many are familiar with techniques like temperature for widening the range of outputs, we hope to propose various alternatives that might manifest differences more robustly. These include:
+·       Sophisticated state-based relationships between agents and overall objectives
+·       Retrieval differences in how agents acquire information that enables them to approach problem with distinct sets of evidence
+·       Belief and experience management that enables agents to be dynamic and influence their internal models.
+·       Defining a variety of interaction schemas that facilitate novel communication mechanisms encouraging creative problem solving and leveraging the advantages of diverse agentic systems.
+·       Delegation mechanisms for defining the interaction problem solving graph. How are the limited resources of the computational graph optimally configured and managed to ensure the right number and right type of agents are being properly deployed in a given moment?
+Section 2: Experiments in Pluralizing Factors
+2.1 Experiments related to Multi-Agent Dynamics in information Retrieval
+Query Differentiation Effects on Researching Topics
+We identify three categories of agent retrieval from the agent’s perspective:
+Larger Parameter Models e.g. GPT4o, LLama 70B etc. 
+Belief Biased Retrieval With Smaller Context Windows
+Interactive Retrieval
+In each case the same retrieval system consisting of a vector database setup with passages from a document base is used. The retrieval system is eThe default presumption is that larger models with larger context windows ought to out-perform smaller models with smaller context windows generally speaking. We hypothesize that implementing alternative agent infrastructures that orchestrate retrieval according to belief biases and interactive schemas will achieve the same or better results with far less compute than larger models require. 
+Certain tasks are likely to exhibit minor differences between setups, or clearly favor one model over another. To test this we break down our retrieval evaluation into three types of problems
+Policy Advocacy where optimal answers:
+Evaluate different stakeholder positions and attempt to maximize benefits
+Offer accurate evidence with correctly cited sources
+Contain only accurate information grounded in facts and logical reasoning
+Basic Information lookup
+Information is concise
+Information is accurate
+Ethical Analysis
+Well reasoned consideration of various ethical perspectives grounded in sourced perspectives
+Balanced synthesis of various positions and analysis of irreconcilable differences
+All systems interact with the same retrieval infrastructure
+The baseline model is Claude-Haiku 
+Test models are:
+GPT4o (single)
+Claude Haiku Multi Agent - Consensus Interaction Schema
+Claude Haiku Multi Agent Belief Bias - Debate Interaction Schema
+The evaluation model is Claude Sonnet 3.5
+Our hypothesis is that Gpt4o will outperform all other models in basic information lookup, but Claude Haiku Multi Agent belief bias will outperform in Policy Advocacy and Ethical Analysis
+Experimental Details:
+Sure, here are some example questions/objectives for each category along with a rubric for scoring the responses.
+
+### Policy Advocacy Questions/Objectives
+
+1. **Climate Change Policy:**
+   - Question: What policies should governments implement to reduce carbon emissions effectively?
+   - Objective: Evaluate different stakeholder positions (e.g., industries, environmentalists, economists) and propose a balanced policy.
+
+2. **Healthcare Reform:**
+   - Question: What are the best approaches to improve accessibility and affordability of healthcare?
+   - Objective: Compare different healthcare models (e.g., single-payer, private insurance, mixed systems) and recommend a policy.
+
+3. **Educational Funding:**
+   - Question: How should educational funding be distributed to ensure equal opportunities for all students?
+   - Objective: Analyze the impacts of various funding models (e.g., per-student funding, needs-based funding) on different communities.
+
+### Basic Information Lookup Questions/Objectives
+
+1. **Historical Facts:**
+   - Question: What were the main causes and consequences of the French Revolution?
+   - Objective: Provide a concise and accurate summary of key events and their impacts.
+
+2. **Scientific Concepts:**
+   - Question: How does photosynthesis work in plants?
+   - Objective: Explain the process of photosynthesis in a clear and detailed manner.
+
+3. **Current Events:**
+   - Question: What are the latest developments in artificial intelligence research?
+   - Objective: Summarize recent advancements and notable projects in AI.
+
+### Ethical Analysis Questions/Objectives
+
+1. **Animal Rights:**
+   - Question: Is it ethical to use animals for scientific research?
+   - Objective: Consider various ethical perspectives (e.g., utilitarianism, deontology, animal rights) and synthesize a balanced analysis.
+
+2. **Privacy vs. Security:**
+   - Question: Should governments have the right to monitor citizens' communications to prevent terrorism?
+   - Objective: Evaluate the ethical implications of privacy invasion versus the need for national security.
+
+3. **Genetic Engineering:**
+   - Question: Is it ethical to genetically modify human embryos for non-medical reasons?
+   - Objective: Discuss the ethical considerations of genetic engineering, including potential benefits and risks.
+
+### Rubric for Scoring Responses
+
+**Policy Advocacy:**
+- **Stakeholder Analysis (30%):** How well does the response identify and evaluate different stakeholder positions?
+  - Excellent: Thorough and balanced analysis of all relevant stakeholders.
+  - Good: Adequate analysis with minor gaps.
+  - Fair: Limited analysis with significant gaps.
+  - Poor: Incomplete or biased analysis.
+
+- **Evidence and Citation (30%):** How accurately and effectively does the response use evidence and citations?
+  - Excellent: Uses strong, well-cited evidence from reputable sources.
+  - Good: Uses adequate evidence with proper citations.
+  - Fair: Uses limited evidence with some citation issues.
+  - Poor: Lacks evidence or proper citations.
+
+- **Logical Coherence (20%):** How logically coherent and well-structured is the response?
+  - Excellent: Highly logical and well-structured.
+  - Good: Generally logical with minor structural issues.
+  - Fair: Some logical inconsistencies or structural issues.
+  - Poor: Lacks logical coherence or clear structure.
+
+- **Feasibility and Impact (20%):** How feasible and impactful are the proposed policies?
+  - Excellent: Highly feasible and impactful.
+  - Good: Generally feasible and impactful with minor issues.
+  - Fair: Limited feasibility or impact.
+  - Poor: Impractical or lacks impact.
+
+**Basic Information Lookup:**
+- **Accuracy (40%):** How accurate is the information provided?
+  - Excellent: Completely accurate.
+  - Good: Mostly accurate with minor errors.
+  - Fair: Some inaccuracies.
+  - Poor: Major inaccuracies.
+
+- **Conciseness (30%):** How concise and to the point is the response?
+  - Excellent: Very concise and clear.
+  - Good: Generally concise with minor verbosity.
+  - Fair: Some verbosity.
+  - Poor: Overly verbose or unclear.
+
+- **Relevance (20%):** How relevant is the information to the question?
+  - Excellent: Highly relevant.
+  - Good: Generally relevant with minor digressions.
+  - Fair: Some irrelevant information.
+  - Poor: Largely irrelevant.
+
+- **Comprehensiveness (10%):** How comprehensive is the response?
+  - Excellent: Thoroughly comprehensive.
+  - Good: Adequately comprehensive with minor gaps.
+  - Fair: Limited comprehensiveness.
+  - Poor: Incomplete.
+
+**Ethical Analysis:**
+- **Perspective Diversity (30%):** How well does the response consider various ethical perspectives?
+  - Excellent: Thorough consideration of diverse perspectives.
+  - Good: Adequate consideration with minor gaps.
+  - Fair: Limited consideration of perspectives.
+  - Poor: Incomplete or biased perspective.
+
+- **Reasoning and Justification (30%):** How well does the response justify its ethical positions?
+  - Excellent: Strong, well-justified reasoning.
+  - Good: Adequate reasoning with minor weaknesses.
+  - Fair: Somewhat justified with significant weaknesses.
+  - Poor: Poorly justified or lacking reasoning.
+
+- **Synthesis and Balance (20%):** How well does the response synthesize and balance different viewpoints?
+  - Excellent: Highly balanced and well-synthesized.
+  - Good: Generally balanced with minor synthesis issues.
+  - Fair: Limited synthesis or imbalance.
+  - Poor: Lacks synthesis or heavily biased.
+
+- **Clarity and Coherence (20%):** How clear and coherent is the response?
+  - Excellent: Very clear and coherent.
+  - Good: Generally clear with minor coherence issues.
+  - Fair: Some clarity or coherence issues.
+  - Poor: Unclear or incoherent.
+
+This rubric can guide the evaluation model (Claude-Sonnet 3.5) to score the responses systematically and fairly based on the outlined criteria.
+
+Other applications
+Further Research
+Multi-Dimensional Embedding References
+Value Based Lookups
+Belief based Lookups
+2.2 Experiments related to Multi-Agent Dynamics in State Management
+Implementing the three state layers
+Bayesian Epistemology and Belief Representation. Can agents persuade other agents to change their beliefs? How does this effect quality of output?
+Deep State and Model Fine-Tuning – PEFT and REFT
+2.2 Experiments related to Multi-Agent Dynamics in Interaction Schemas
+
+Reversing the Positivity Bias: Can agents optimized to prefer disagreement generate better results in a decision calculus?
+Debate and Dialectical Reasoning
+Consensus Models
+Recursive Delegation: How do parent agents delegate to child agents? Attention splitting – Start with 2 agents, if both agree your done, if not split into 4 and so on based on some acceptable threshold of consensus.
+
+Section 3: Open Source Frameworks for studying multi-agent language systems and evaluating collaborative human in the loop preferences
+1.        The need for an open source framework
+2.        The ethical value of building AI communities
+3.        Tracking human preferences in when collaborating with multi-agent language systems.
+4.        Quantifying pluralism – how can we determine if one system is more pluralistic than another?
+5.        Next steps
+ 
+Conclusion
+
